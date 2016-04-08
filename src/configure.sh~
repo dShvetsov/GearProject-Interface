@@ -1,0 +1,8 @@
+qmake ./console/consoleApplication.pro -o ../bin/console/Makefile -spec linux-g++
+qmake ./gui/GuiRepairMechanism.pro -o ../bin/Gui/Makefile -spec linux-g++
+cd ../bin/console
+make
+cd ../Gui
+make
+cd ../
+mkdir plugins -p
